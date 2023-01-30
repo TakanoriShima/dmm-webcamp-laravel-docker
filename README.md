@@ -60,4 +60,5 @@ error_reporting = E_ALL & ~E_NOTICE
 サーバ起動
 ```
 $ php -S $IP:$PORT -c php.ini
+$ php -S localhost:8080 -c php.ini
 ```
