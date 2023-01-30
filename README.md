@@ -49,3 +49,15 @@ $ php artisan serve --port=$PORT
 $ mysql -h db -u root -p
 root
 MySQL [todolist]> exit
+
+---
+
+php.ini に記述します。
+```
+error_reporting = E_ALL & ~E_NOTICE
+```
+
+サーバ起動
+```
+$ php -S $IP:$PORT -c php.ini
+```
