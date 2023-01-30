@@ -5,7 +5,6 @@ RUN apt-get update \
   && apt-get install -y zlib1g-dev libpq-dev mariadb-client unzip libzip-dev\
   && docker-php-ext-install zip pdo_mysql mysqli \
   && docker-php-ext-enable mysqli
-  # && systemctl
 
 RUN ln -s /etc/apache2/mods-available/rewrite.load /etc/apache2/mods-enabled/rewrite.load
 RUN ln -s /etc/apache2/mods-available/vhost_alias.load /etc/apache2/mods-enabled
